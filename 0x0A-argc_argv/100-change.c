@@ -6,8 +6,8 @@
  *       make change for an amount of money
  * @argc: the number of arrguments suplied to the program
  * @argv: an array of pointers to the argument
- * Return: iff tfhefff number of arguments is not exactly one - 1
- *       otherwise - 0
+ *
+ * Return: 0 (succes), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
