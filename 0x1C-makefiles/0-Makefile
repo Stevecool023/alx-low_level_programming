@@ -1,3 +1,7 @@
 all: school
-school: school.c main.c m.h
-	gcc -c $< m.h *.c
+school: school.o main.0 m.o
+	gcc -o $< m.o school.o main.o
+
+school.o : school.c m.h
+main.o : main.c m.h
+m.o : stdlib.h stdio.h
